@@ -1,0 +1,7 @@
+1, lora.c 获取设备 id
+            uint32_t _lora_get_own_device_id() {
+            return 0;
+            // return *(uint32_t*)0x1FFF7590;
+        }
+    因为esp32 访问不到*(uint32_t*)0x1FFF7590这块地址，所以返回为 0；
+2，
